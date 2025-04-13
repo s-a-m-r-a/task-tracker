@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+.todo-container {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+  
+.yellow-bar {
+  background-color: #ffdc40;
+  width: 100%;
+  height: 28px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+  
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  margin: 13px 0px 16px;
+}
+  
+.sort-container {
+  margin-bottom: 8px;
+  margin-right: -250px;
+}
+
+#sort-btn {
+  width: 25px;
+  height: 15px;
+  background: url("./icons/sort.svg");
+  border: none;
+  cursor: pointer;
+}
+
+#sort-btn.inc{
+  background-image: url("./icons/sort.svg");
+}
+
+#sort-btn.inc:hover {
+  background-image: url("./icons/sort-hover.svg");
+  transition: ease-in-out 0.3s;
+}
+
+#sort-btn.dec {
+  background-image: url("./icons/reverse.svg");
+}
+
+#sort-btn.dec:hover {
+  background-image: url("./icons/reverse-hover.svg");
+  transition: ease-in-out 0.3s;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 5px 6px 0px 8px;
+}
+  
+#input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#input:focus {
+  outline: 1px solid #aba9a9;
+}
+
+#clear-btn {
+  width: 20px;
+  height: 20px;
+  margin-left: -52px;
+  background: url("./icons/clear-btn.svg");
+  border: none;
+  cursor: pointer;
+}
+
+#clear-btn:hover {
+  background-image: url("./icons/clear-hover.svg");
+  transition: ease-in-out 0.3s;
+}
+
+#add-btn {
+  margin: 18px 72px 19px 73px;
+  width: 150px;
+  height: 42px;
+  background: url("./icons/add-btn.svg");
+  border: none;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-image: url("./icons/add-hover.svg");
+  transition: ease-in-out 0.3s;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  list-style: none;
+  padding: 5px;
+  width: 90%;
+  margin-bottom: 18px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 14px;
+  font-size: 14px;
+}
+
+li button {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+  background: url("./icons/clear-btn.svg");
+  border: none;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-image: url("./icons/clear-hover.svg");
+  transition: ease-in-out 0.3s;
+}
+
+.list-input {
+  width: 90%;
+  margin-left: -5px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.list-input:focus {
+  outline: 1px solid #aba9a9;
+}
