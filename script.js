@@ -72,6 +72,7 @@ document.getElementById("add-btn").addEventListener("click", () => {
         });
 
         listItem.append(listInput, clearBtn);
+        
     } else {
         
         listItem.textContent = inputBox.value;
